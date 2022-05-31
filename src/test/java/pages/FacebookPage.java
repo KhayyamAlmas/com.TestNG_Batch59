@@ -6,7 +6,6 @@ import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
 public class FacebookPage {
-    public WebElement cookieButonu;
 
     public FacebookPage(){
         PageFactory.initElements(Driver.getDriver(),this);
@@ -20,7 +19,7 @@ public class FacebookPage {
         @FindBy(name = "login")
         public WebElement loginTusu;
 
-        @FindBy(className = "_9ay7")
+        @FindBy(id = "error_box")
         public WebElement girilemediYaziElementi;
 
 
