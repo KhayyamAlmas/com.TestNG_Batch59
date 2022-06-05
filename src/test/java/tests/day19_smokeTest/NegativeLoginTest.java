@@ -11,7 +11,7 @@ public class NegativeLoginTest {
     BrcPage brcPage=new BrcPage();
 
     @Test
-    public void yanlisSifre() {
+    public void yanlisSifre() throws InterruptedException {
 
         // Bir test method olustur positiveLoginTest()
         // https://www.bluerentalcars.com/ adresine git
@@ -33,5 +33,9 @@ public class NegativeLoginTest {
         Assert.assertTrue(brcPage.ikinciLoginButonu.isDisplayed());
 
         Driver.closeDriver();
+
+        // bu class'da 2 test methodu daha olusturun
+        // biri yanlisKullanici
+        // digeri de yanlis sifre ve kullanic adi
     }
 }
